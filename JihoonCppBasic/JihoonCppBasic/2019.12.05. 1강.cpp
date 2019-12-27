@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Function.h"
 
 #define IS_BOY(a)		(a & 0x80000000)
 #define NULL '\0'
@@ -46,11 +47,17 @@ int main()
 	int b = 4;
 
 	int c = 3;
-	
-	c =	a + b;
+
+	Multiple10(&c);
+
+	void(*pFnMultiple10)(int*);
+	pFnMultiple10 = &Multiple10;
+
+	pFnMultiple10(&c);
+
 	c = a - b;
 
-	c = a * b;	 
+	c = a * b;
 	c = a / b;
 	c = a % b;	//나머지 Modular	
 	a++;
@@ -58,7 +65,7 @@ int main()
 	
 	bool bValue = false;
 	bValue = a * b * 0;
-
+	
 	//조건연산자
 	a > b;					// 왼쪽이 크냐
 	b < a;					// 오른쪽이 크냐

@@ -18,5 +18,13 @@
     <ClCompile Include="2019.12.05. 1강.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Function.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

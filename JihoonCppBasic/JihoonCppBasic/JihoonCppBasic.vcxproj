@@ -116,6 +116,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="2019.12.05. 1강.cpp" />
+    <ClCompile Include="Function.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Function.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
