@@ -116,6 +116,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="2019.12.05. 1강.cpp" />
+    <ClCompile Include="2019.12.11 2강.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Lecture_01_Data_Type.h" />
+    <ClInclude Include="Lecture_02_Pointer.h" />
+    <ClInclude Include="Lecture_03_Array.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
