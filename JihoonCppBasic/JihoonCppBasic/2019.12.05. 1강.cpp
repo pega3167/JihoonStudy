@@ -2,7 +2,6 @@
 #include "Function.h"
 
 #define IS_BOY(a)		(a & 0x80000000)
-#define NULL '\0'
 #define IS_NULL(value)	value == NULL
 #define NAME_COUNT_MAX	32
 
@@ -66,14 +65,16 @@ int main()
 	bool bValue = false;
 	bValue = a * b * 0;
 	
-	//조건연산자
-	a > b;					// 왼쪽이 크냐
-	b < a;					// 오른쪽이 크냐
-	a == b;					//같냐
-	a != b;					//다르냐
-	false || false;			//or
-	true && true;			//and
-	!a;						//true -> false / false -> true ~가아니면
+	//조건연산자 => 연산 결과는 bool형태
+	bool bResult;
+
+	bResult = a > b;				// 왼쪽이 크냐
+	bResult = b < a;				// 오른쪽이 크냐
+	bResult = a == b;				//같냐
+	bResult = a != b;				//다르냐
+	bResult = false || false;		//or
+	bResult = true && true;			//and
+	bResult = !a;					//true -> false / false -> true ~가아니면
 
 	
 	bool bALargerThan3OrBLargerThan4 = !(a > 3 || b > 4);
