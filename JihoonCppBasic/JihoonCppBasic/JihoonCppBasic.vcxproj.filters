@@ -32,5 +32,13 @@
     <ClInclude Include="Lecture_03_Array.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClCompile Include="Function.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
